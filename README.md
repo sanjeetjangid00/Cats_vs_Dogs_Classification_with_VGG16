@@ -42,5 +42,5 @@ Evaluate the model using accuracy, precision, recall, and F1-score on the test s
 ### Confusion Matrix:
 Generate a confusion matrix to visualize the performance of the classifier in distinguishing between cat and dog images.
 ## Results
-The fine-tuned VGG16 model achieved a training accuracy of approximately 98% and a test accuracy of approximately 95%, indicating its effectiveness in distinguishing between cats and dogs.
+The fine-tuned VGG16 model achieved a training accuracy of approximately 97% and a test accuracy of approximately 96%, indicating its effectiveness in distinguishing between cats and dogs.
 The model demonstrated high precision and recall, with an F1-score that reflects the balance between these metrics.
