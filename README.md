@@ -21,12 +21,12 @@ Model Architecture:
 ## Base Model:
 Utilize the VGG16 architecture pre-trained on the ImageNet dataset, excluding its top fully connected layers.
 ### Custom Layers for Fine-Tuning:
-Add 3 convolutional layers with 512, 512, and 512 filters, respectively, each followed by ReLU activation.
-Add 1 max pooling layer to reduce spatial dimensions.
-Add a flatten layer to convert the 2D matrix to a 1D vector.
-Add 2 fully connected dense layers with 512 and 1024 units and ReLU activation.
-Include 2 dropout layers with a dropout rate of 0.2 after each dense layer to reduce overfitting.
-Add a final dense layer with 1 unit and sigmoid activation for binary classification.
+1. Add 3 convolutional layers with 512, 512, and 512 filters, respectively, each followed by ReLU activation.
+2. Add 1 max pooling layer to reduce spatial dimensions.
+3. Add a flatten layer to convert the 2D matrix to a 1D vector.
+4. Add 2 fully connected dense layers with 512 and 1024 units and ReLU activation.
+5. Include 2 dropout layers with a dropout rate of 0.2 after each dense layer to reduce overfitting.
+6. Add a final dense layer with 1 unit and sigmoid activation for binary classification.
 ## Training:
 
 ### Loss Function:
