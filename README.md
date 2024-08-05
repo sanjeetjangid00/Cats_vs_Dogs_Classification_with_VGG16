@@ -37,10 +37,5 @@ Use the Stochastic Gradient Descent optimizer with default learning rate.
 Train the model for 20 epochs with a batch size of 32, using a validation split of 20% to monitor performance on the validation set.
 Evaluation:
 
-### Metrics:
-Evaluate the model using accuracy, precision, recall, and F1-score on the test set.
-### Confusion Matrix:
-Generate a confusion matrix to visualize the performance of the classifier in distinguishing between cat and dog images.
 ## Results
 The fine-tuned VGG16 model achieved a training accuracy of approximately 97% and a test accuracy of approximately 96%, indicating its effectiveness in distinguishing between cats and dogs.
-The model demonstrated high precision and recall, with an F1-score that reflects the balance between these metrics.
