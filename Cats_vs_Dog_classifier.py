@@ -11,7 +11,7 @@ def centered_content():
 with centered_content()[1]:
     st.title(":blue[Cat & Dog Image Classifier]")
 
-model = tf.keras.models.load_model('https://github.com/sanjeetjangid00/Cats_vs_Dogs_Classification_with_VGG16/blob/ea4ad5af196da46bc95a66f1cfaedfb00f333fed/model.h5')
+model = tf.keras.models.load_model('model.h5')
 uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
