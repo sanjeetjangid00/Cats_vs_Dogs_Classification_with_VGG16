@@ -22,10 +22,12 @@ if uploaded_file is not None:
     image_array = np.expand_dims(image_array, axis=0)
     image_pred = model.predict(image_array)
     if image_pred>0.5:
-        st.header(":green[It's a Dog Image]")
-        st.write(":red[It can predict 97% accurate only...]")
+        with st.spinner("loading..."):
+            st.header(":green[It's a Dog Image]")
+            st.write(":red[It can predict 97% accurate only...]")
     else:
-        st.header(":green[It's a Cat Image]")
-        st.write(":red[It can predict 97% accurate only...]")
+        with st.spinner("loading..."):
+            st.header(":green[It's a Cat Image]")
+            st.write(":red[It can predict 97% accurate only...]")
 else:
     st.warning(":red[Please upload an image....]")
