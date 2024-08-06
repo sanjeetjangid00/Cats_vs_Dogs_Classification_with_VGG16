@@ -25,8 +25,7 @@ if uploaded_file is not None:
         if image_pred>0.5:
             st.header(":green[It's a Dog Image]")
             st.write(":red[It can predict 97% accurate only...]")
-    else:
-        with st.spinner("loading..."):
+        else:
             st.header(":green[It's a Cat Image]")
             st.write(":red[It can predict 97% accurate only...]")
 else:
