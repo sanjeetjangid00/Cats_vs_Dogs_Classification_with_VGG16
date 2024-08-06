@@ -20,9 +20,9 @@ if uploaded_file is not None:
     resized_img = image.resize((150,150))
     image_array = np.array(resized_img) / 255.0
     image_array = np.expand_dims(image_array, axis=0)
-    image_pred = model.predict(image_array)
-    if image_pred>0.5:
-        with st.spinner("loading..."):
+    with st.spinner("loading...")
+        image_pred = model.predict(image_array)
+        if image_pred>0.5:
             st.header(":green[It's a Dog Image]")
             st.write(":red[It can predict 97% accurate only...]")
     else:
