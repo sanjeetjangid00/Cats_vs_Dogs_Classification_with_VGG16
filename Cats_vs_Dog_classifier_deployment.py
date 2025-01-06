@@ -16,7 +16,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
     resized_image = image.resize((300,150))
-    st.image(resized_image, caption='Uploaded Image', use_column_width=False)
+    st.image(resized_image, caption='Uploaded Image', use_container_width=False)
     resized_img = image.resize((150,150))
     image_array = np.array(resized_img) / 255.0
     image_array = np.expand_dims(image_array, axis=0)
@@ -24,9 +24,7 @@ if uploaded_file is not None:
         image_pred = model.predict(image_array)
         if image_pred>0.5:
             st.header(":green[It's a Dog Image]")
-            st.write(":red[It can predict 97% accurate only...]")
         else:
             st.header(":green[It's a Cat Image]")
-            st.write(":red[It can predict 97% accurate only...]")
 else:
     st.warning(":red[Please upload an image....]")
